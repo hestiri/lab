@@ -1,0 +1,12 @@
+{{ with .Params.status }}
+    {{ if eq "Media" . }}
+    <span class="status">Media 📻</span>
+    {{ else if eq "Open-source" . }}
+    <span class="status">Open-source 📖</span>
+    {{ else if eq "Publication" . }}
+    <span class="status">Publication 📝</span>
+    {{ else if eq "Research" . }}
+    <span class="status">Research 🔬</span>
+    {{ else }}
+    {{ end }}
+{{ end }}

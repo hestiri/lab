@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research_tags on Lab of Clinical Augmented Intelligence (CLAI)</title>
+    <link>/research_tags/</link>
+    <description>Recent content in Research_tags on Lab of Clinical Augmented Intelligence (CLAI)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CLAI ©</copyright>
+    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="/research_tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CLAI</title>
+      <link>/research_tags/clai/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/clai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>representation mining</title>
+      <link>/research_tags/representation-mining/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/representation-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>temporal ML</title>
+      <link>/research_tags/temporal-ml/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/temporal-ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>animation</title>
+      <link>/research_tags/animation/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/animation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>media</title>
+      <link>/research_tags/media/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/media/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sequencing</title>
+      <link>/research_tags/sequencing/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/sequencing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MLOPs</title>
+      <link>/research_tags/mlops/</link>
+      <pubDate>Sat, 21 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/mlops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI/ML</title>
+      <link>/research_tags/ai/ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/ai/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI/ML bias</title>
+      <link>/research_tags/ai/ml-bias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/ai/ml-bias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data-centric</title>
+      <link>/research_tags/data-centric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/data-centric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>system</title>
+      <link>/research_tags/system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research_tags/system/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

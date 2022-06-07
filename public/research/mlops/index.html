@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Lab of Clinical Augmented Intelligence (CLAI) | MLOps for life sciences</title>
+    <meta name="description" content="Instrumenting Machine Learning Operations for Clinical Research">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">CLAI</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/research/"> Research</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/team/"> Team</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/news/"> News</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">MLOps for life sciences</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Instrumenting Machine Learning Operations for Clinical Research</p>
+        
+        <div class="text-center pt-4">
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created May 21, 2022 - 
+                
+                Last updated: May 21, 2022
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Publication 📝</span>
+    
+
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <p>Healthcare research and industry have been increasingly progressive in the translation and implementation of Machine Learning (ML) to improve outcomes and lower costs. For a typical healthcare researcher, however, the process of designing and deploying complex ML models on clinical data is not as buttoned-down as running a typical enterprise IT application, such as EHR cohort query tools. On the algorithms, technical advances are made on a regular basis by the broader ML community, mostly in computer vision and language models. However, <code>Machine Learning Operations (MLOps)</code> in the context of healthcare data in general, and specifically structured clinical data stored in electronic health records (EHRs), requires <code>data-centric</code> approaches to respect the data governance and meet usability and <code>interpretability</code> considerations in healthcare. Further, EHR data are known to embody noise, which may be introduced through the recording processes and/or various mechanisms such as observational error, misapplication, and healthcare access inequalities.</p>
+<img src="images/MLOps_healthcare_1.png" alt="MLOps for healthcare" width="600" lign = "center" />
+<figcaption align = "center"><b> MLOps for life sciences </b></figcaption>
+<p>MLHO’s architecture  enables the operationalization of Machine Learning for clinical research. We discuss that, unlike the mainstream ML solutions that are algorithm-centric, MLHO’s approach is data-centric, recognizing the governance and quality considerations of clinical data.  In other words, MLHO lets us hold the code (ML algorithm) constant, and work on the data. MLHO also incorporates time into the learning process, by allowing for iterative feature and model selection in the modeling lifecycles. As we have experienced in our current and prior research, this feature is specifically suitable for modeling complex phenotypes that may be difficult to define, limited to a distinct temporal period, and evolve over time, such as the Post-Acute Sequelae of SARS-CoV-2 infection (PASC). In addition to our team’s work, so far, multiple researchers across different organizations (and around the world) have begun applying MLHO to different problems, such as defining PASC phenotypes and predicting immunotherapy outcomes. While MLHO’s use cases have been based on research, it can be utilized for the deployment of ML-based applications, in full scale Machine Learning Operations (MLOps) by the addition of a deployment module, in which further unit testing and interface design considerations are added to the evaluation criteria.</p>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">CLAI © 2022 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-google"></i></a>
+            
+        </div>
+    </div>
+</div><script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+</html>

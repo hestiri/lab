@@ -1,0 +1,53 @@
+
+languageCode: en-us
+title: Lab of Clinical Augmented Intelligence (CLAI)
+theme: hugo-digital-garden-theme
+copyright: CLAI ©
+params:
+  description: Integrating Medicine, Data Science, & Phenomenology to enrich human phenotype models.
+  googleAnalytics: ''
+  initials: CLAI
+  name: Clinical Augmented Intelligence (CLAI) Group
+  social:
+    - icon: fab fa-twitter
+      link: '#'
+      name: Twitter
+    - icon: fab fa-github
+      link: '#'
+      name: Github
+    - icon: fab fa-google
+      link: '#'
+      name: Google
+
+menu:
+  main:
+    - name: Research
+      url: /research/
+      weight: 1
+    - name: Team
+      url: /team/
+      weight: 2
+    - name: About
+      url: /about/
+      weight: 3
+    - name: News
+      url: /news/
+      weight: 4
+taxonomies:
+  news_tags: news_tags
+  research_tags: research_tags
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: yes
+      footnote: yes
+      linkify: yes
+      strikethrough: yes
+      table: yes
+      taskList: yes
+      typographer: yes
+    renderer:
+      unsafe: yes
+  highlight:
+    style: monokailight

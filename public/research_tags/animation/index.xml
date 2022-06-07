@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>animation on Lab of Clinical Augmented Intelligence (CLAI)</title>
+    <link>/research_tags/animation/</link>
+    <description>Recent content in animation on Lab of Clinical Augmented Intelligence (CLAI)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CLAI ©</copyright>
+    <lastBuildDate>Tue, 31 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/research_tags/animation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An ICD story</title>
+      <link>/research/ehr_sequencing_story/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/ehr_sequencing_story/</guid>
+      <description>story of how we find true moments of individual records from the EHR with tSPM</description>
+    </item>
+    
+  </channel>
+</rss>

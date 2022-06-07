@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Lab of Clinical Augmented Intelligence (CLAI) | Thinkin&#39; AI with MLHO</title>
+    <meta name="description" content="A data-centric approach AI/ML system that learns over time">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">CLAI</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/research/"> Research</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/team/"> Team</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/news/"> News</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">Thinkin&#39; AI with MLHO</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">A data-centric approach AI/ML system that learns over time</p>
+        
+        <div class="text-center pt-4">
+            
+            
+            <a href="https://hestiri.github.io/mlho/" role="button" class="btn btn-sm btn-link mx-2" target="_blank">
+                <i class="fab alt brands fa-github fs-5"></i>
+            MLHO code and demo
+            </a>
+            
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                Last updated: Jan 1, 0001
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Publication 📝</span>
+    
+
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <p>Healthcare research and industry have been increasingly progressive in the translation and implementation of Machine Learning (ML) to improve outcomes and lower costs. For a typical healthcare researcher, however, the process of designing and deploying complex ML models on clinical data is not as buttoned-down as running a typical enterprise IT application, such as EHR cohort query tools. On the algorithms, technical advances are made on a regular basis by the broader ML community, mostly in computer vision and language models. However, <code>Machine Learning Operations (MLOps)</code> in the context of healthcare data in general, and specifically structured clinical data stored in electronic health records (EHRs), requires <code>data-centric</code> approaches to respect the data governance and meet usability and <code>interpretability</code> considerations in healthcare. Further, EHR data are known to embody noise, which may be introduced through the recording processes and/or various mechanisms such as observational error, misapplication, and healthcare access inequalities. As a result, direct application of standard ML algorithms to EHR data without a data-centric approach may introduce or worsen underlying systemic bias.</p>
+<p>MLHO is a <code>Thinkin'</code> <strong>Machine Learning</strong> pipeline for modeling <strong>H</strong>ealth <strong>O</strong>utcomes. Thinkin&rsquo;, because the algorithm is not the center. Thinkin&rsquo;, because it learns representations over time, as the outcome phenotype evolves.
+<img src="images/MLHO_pipeline.png" alt="MLHO pipeline" width="700"/></p>
+<figcaption align = "center"><b> The 5 modules of MLHO pipeline for clinical MLOps</b></figcaption>
+<p>The design principles of MLHO enable Machine Learning Operations (MLOps) by emphasizing (a) a data-centric pipeline allowing multiple choices of classification algorithms to (b) prioritize fitness-for-use on (c) EHR’s structured data in order to create (d) clinically interpretable models for identifying accurate patient cohorts and predicting outcomes.</p>
+<p><span><strong>1.</strong></span> <strong>Input data model</strong><br/></p>
+<p>MLHO works on a simple data model that nearly any standard common data model (e.g., OMOP, i2b2, PCORNet, Sentinel) can be transformed to, in real-time, to develop an ML model. To implement MLHO, 2 tables are needed: 1) a table containing training labels and patient numbers, and 2) a long clinical table with 3 columns containing patient numbers, clinical concepts (e.g., diagnosis/medication code), and dates, that comprise the modeling features. The labels can be provided by the user as a rule-based algorithm, generated by other intermediary algorithms (as in semi-supervised ML), or curated by experts. Generation of the long clinical table can be streamlined in a query tool. For clinical measurement data such as labs, a 4th column can be added to the clinical table.</p>
+<p><span><strong>2.</strong></span> <strong>Feature engineering</strong><br/>
+MLHO is equipped with novel algorithms for temporal representation mining (tSPM) and high-throughput dimensionality reduction (MSMR). The transitive Sequential Pattern Mining (tSPM) algorithm provides a modified sequencing procedure to address some of the issues caused by the recording processes in EHRs. We have demonstrated its utility in improving computational phenotyping and predictive modeling performance and interpretability.2,3 MLHO also includes a formal dimensionality reduction procedure that aims to minimize sparsity and maximize relevance (MSMR), leveraging information-theoretic techniques to provide the best trade-off between accuracy and stability. Transitive sequences present more precise information by reducing some of the noise in the EHR data. Additionally, the sequences are not limited to just combinations of diagnoses but include and leverage other structured data elements including medications, procedures, and laboratory codes. The MSMR algorithm allows for the seamless discovery of these precise sequential record combinations as well as expert-curated features. Across the MLOps cycle in MLHO, feature engineering takes the longest time and most computational resources to ensure that complex noisy EHR data are translated into a machine-readable form with reduced noise.</p>
+<p><span><strong>3.</strong></span> <strong>Iterative model selection</strong><br/>
+Outside of unstructured problems (e.g., images/video/sound/text), where advanced Neural Network-based solutions (e.g., Deep Learning) often provide the best learning accuracy, simpler algorithms (e..g., regularizations of decision trees and common regression models) are known to perform very well in learning tasks from standard tabular data. MLHO’s model selection module provides a wrapper to many statistical learning algorithms that are available in different R packages. This capability allows the user to test the performance of a slew of available classification/regression algorithms.  The model selection module is integrated with the feature engineering module, which together and through a set of iterations enable simultaneous feature and model selection.</p>
+<p><span><strong>4.</strong></span> <strong>Modeling and evaluations</strong><br/>
+Once the final set of features and the most suitable modeling algorithm are identified, MLHO enables unified modeling and model evaluations, in which the user can train the final model and evaluate a comprehensive set of performance metrics..</p>
+<p><span><strong>5.</strong></span> <strong>Interpretability</strong><br/>
+The final model identifies the specific structured data (including diagnoses, medications, laboratory tests, and procedures) and the temporal relationship to one another, in order to identify the cohort or outcome. MLHO provides an interactive visualization dashboard to construct pathways from important temporal representations. A researcher implementing the model can then examine these clinically meaningful, temporal features, to understand exactly how the model works.</p>
+<hr>
+<p><small>icon made by <a href="https://www.flaticon.com/free-icons/devops" title="SBTS2018 - Flaticon">SBTS2018 - Flaticon</a> from <a href="https://www.flaticon.com/" title="Flaticon"><a href="https://www.flaticon.com">www.flaticon.com</a></a></small></p>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">CLAI © 2022 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-google"></i></a>
+            
+        </div>
+    </div>
+</div><script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+</html>

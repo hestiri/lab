@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MLOPs on Lab of Clinical Augmented Intelligence (CLAI)</title>
+    <link>/research_tags/mlops/</link>
+    <description>Recent content in MLOPs on Lab of Clinical Augmented Intelligence (CLAI)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CLAI ©</copyright>
+    <lastBuildDate>Sat, 21 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/research_tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MLOps for life sciences</title>
+      <link>/research/mlops/</link>
+      <pubDate>Sat, 21 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/mlops/</guid>
+      <description>Instrumenting Machine Learning Operations for Clinical Research</description>
+    </item>
+    
+  </channel>
+</rss>

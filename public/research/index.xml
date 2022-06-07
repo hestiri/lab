@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Lab of Clinical Augmented Intelligence (CLAI)</title>
+    <link>/research/</link>
+    <description>Recent content in Research on Lab of Clinical Augmented Intelligence (CLAI)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CLAI ©</copyright>
+    <lastBuildDate>Sat, 31 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>transitive sequential pattern mining (tSPM)</title>
+      <link>/research/tspm/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/tspm/</guid>
+      <description>Mining meaningful temporal representations from clinical data</description>
+    </item>
+    
+    <item>
+      <title>Research Impact</title>
+      <link>/research/media_coverage/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/media_coverage/</guid>
+      <description>Research with national and international impact</description>
+    </item>
+    
+    <item>
+      <title>MLOps for life sciences</title>
+      <link>/research/mlops/</link>
+      <pubDate>Sat, 21 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/mlops/</guid>
+      <description>Instrumenting Machine Learning Operations for Clinical Research</description>
+    </item>
+    
+    <item>
+      <title>Evaluating Bias in Medical AI</title>
+      <link>/research/ai_bias/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/ai_bias/</guid>
+      <description>An objective framework for evaluating unrecognized bias in medical AI models</description>
+    </item>
+    
+    <item>
+      <title>Thinkin&#39; AI with MLHO</title>
+      <link>/research/thinkin_ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/thinkin_ai/</guid>
+      <description>A data-centric approach AI/ML system that learns over time</description>
+    </item>
+    
+    <item>
+      <title>An ICD story</title>
+      <link>/research/ehr_sequencing_story/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/ehr_sequencing_story/</guid>
+      <description>story of how we find true moments of individual records from the EHR with tSPM</description>
+    </item>
+    
+    <item>
+      <title>CLAI</title>
+      <link>/research/clai/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research/clai/</guid>
+      <description>a lab for &lt;strong&gt;CL&lt;/strong&gt;inical &lt;strong&gt;A&lt;/strong&gt;ugmented &lt;strong&gt;I&lt;/strong&gt;ntelligence</description>
+    </item>
+    
+  </channel>
+</rss>

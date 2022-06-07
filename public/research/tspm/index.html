@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>Lab of Clinical Augmented Intelligence (CLAI) | transitive sequential pattern mining (tSPM)</title>
+    <meta name="description" content="Mining meaningful temporal representations from clinical data">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            
+            <b style="font-weight: 800;">CLAI</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/research/"> Research</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/team/"> Team</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/news/"> News</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-4 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-4 text-center">transitive sequential pattern mining (tSPM)</h1>
+        </div>
+        
+        <p class="text-center fs-4 fst-italic serif">Mining meaningful temporal representations from clinical data</p>
+        
+        <div class="text-center pt-4">
+            
+            
+            <a href="https://github.com/hestiri/TSPM" role="button" class="btn btn-sm btn-link mx-2" target="_blank">
+                <i class="fab alt brands fa-github fs-5"></i>
+            tSPM code
+            </a>
+            
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+            <p class="card-date m-0">
+                
+                
+                    Created Jun 2, 2022 - 
+                
+                Last updated: Jun 2, 2022
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    
+    
+    <span class="status">Publication 📝</span>
+    
+
+
+                </div>
+                <div class="col-sm-8" style="text-align: right;">
+                    
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2">
+        <div class="serif main-content">
+            <p>An underutilized aspect of electronic medical records is their temporal dimension. EHRs contain important temporal information about disease progression and treatment outcomes. However, EHR observations are often acquired asynchronously across time (i.e.,  measured at different time instants and sampled irregularly in time) and include sparse and heterogeneous data.</p>
+<p>The record of the EHR diagnosis and its time stamp may not give the true disease state or the actual onset of the disease. This property provides
+challenges for directly applying standard temporal analysis methods to clinical
+data recorded in EHRs. Specically, traditional time-series analysis methods
+can not be directly applied to analyze the temporal dimensions of the discrete&quot;
+clinical data (e.g., diagnosis records) due to the temporally irregular recording of these
+data.</p>
+<p><img src="images/the_sequence.png" align = "left" alt="tSPM sequence" width="300"/> We have developed a novel sequential pattern mining algorithm, the transitive sequential pattern mining (tSPM), to construct temporal data representations from EHR data for application in downstream AL/ML algorithms.
+In the tSPM algorithm, we use of first record (rather than all records) is a major difference in the way sequential patterns are mined in tSPM to handle the repeated problem list entries.</p>
+<p>It is important to emphasize that we call the sequential pairs in the tSPM approach transitive sequences as they embody distinctive modifications to the conventional sequential pattern mining (SPM). Imagine a sequential pattern where observation <code>A</code> happened right before <code>B</code>, and <code>B</code> happened right before <code>C</code> (<code>A</code> ⇒ <code>B</code> ⇒ <code>C</code>). SPM mines subsequences <code>A</code> ⇒ <code>B</code> and <code>B</code> ⇒ <code>C</code>. To account for the potential biases in EHRs, the transitive sequencing algorithm mines sub-sequences <code>A</code>* ⇒ <code>B</code>*, <code>B</code>* ⇒ <code>C</code>*, but also <code>A</code>* ⇒ <code>C</code>* from the sequence <code>A</code>* ⇒ <code>B</code>* ⇒ <code>C</code>*, where <code>A</code>* , <code>B</code>*, and <code>C</code>* are the first records of <code>A</code>, <code>B</code>, <code>C</code> in the database.</p>
+<p>We start with mining 2-deep sequences:</p>
+<img src="images/sequence_scene_1.png" align = "center" alt="tSPM sequence" width="800"/> 
+<p>We can connect these sequences to create 3-deeps:</p>
+<img src="images/sequence_scene_2.png" align = "center" alt="tSPM sequence" width="800"/> 
+<p>Then we can continue connecting to shape more complex representations
+(<code>interactomes</code>) from n-deep sequences that are also vertically connected.</p>
+<img src="images/sequence_type.png" align = "left" alt="tSPM sequence" width="500"/> 
+<p>We can do the connection between sequences through our dimensionality reduction algorithm</p>
+<p>Unlike most Deep Learning approaches that have been developed to improve prediction, tSPM starts with user interpretability and works backwards to the technology.</p>
+
+        </div>
+    </div>
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">CLAI © 2022 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2" href="#" target="_blank"><i class="fab fa-google"></i></a>
+            
+        </div>
+    </div>
+</div><script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+</html>
